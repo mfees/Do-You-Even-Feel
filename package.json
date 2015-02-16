@@ -1,0 +1,19 @@
+{
+  "name": "Do-You-Even-Feel",
+  "version": "1.0.0",
+  "description": "Maddie and Carolina's Music Player",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mfees/Do-You-Even-Feel.git"
+  },
+  "author": "Maddie Fees <madison.fees90@gmail.com>",
+  "license": "CC0",
+  "bugs": {
+    "url": "https://github.com/mfees/Do-You-Even-Feel/issues"
+  },
+  "homepage": "https://github.com/mfees/Do-You-Even-Feel"
+}
