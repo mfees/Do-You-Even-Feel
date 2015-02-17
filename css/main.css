@@ -122,19 +122,26 @@ h3 {
     
 }
 
+.closed {
+    display: none;
+}
+
 a:hover {
     text-decoration: none;
 }
 
 #main-container {
-    width: 80%;
+    width: 70%;
+    min-width: 40%;
     margin: 0 auto;
 }
 
 .button-section {
+/*
     width: 30%;
     float: left;
     box-sizing: border-box;
+*/
 }
 
 .feelings {
@@ -225,17 +232,18 @@ a:hover {
 }
 
 .music-section {
+/*
     width: 70%;
     float: left;
     box-sizing: border-box;
+*/
     background-color: #777;
     padding-bottom: 5em;
-    border-bottom: 5px solid #555;
+/*    border-bottom: 5px solid #555;*/
 }
 
 .image-container {
     text-align: center;
-    margin-top: 5em;
 }
 
 .audio-player, .audio-player div, .audio-player h2, .audio-player a, .audio-player span, .audio-player button {
