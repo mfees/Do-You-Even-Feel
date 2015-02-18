@@ -221,7 +221,7 @@ a:hover {
    float: left;
    box-sizing: border-box;
    background-color: #777;
-   padding-bottom: 5em;
+   padding-bottom: 3em;
 }
 
 .image-container {
@@ -238,7 +238,7 @@ a:hover {
 
 div.audio-player {
    width: 450px;
-   margin: 5em auto 0;
+   margin: 3em auto 0;
    text-align: center;
 }
 .audio-player h2 {
