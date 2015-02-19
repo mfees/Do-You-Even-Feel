@@ -250,6 +250,13 @@ div.audio-player {
  color: #ececec ;
 }
 
+a:-webkit-any-link{
+ text-decoration:none; 
+ }
+
+#audio-player {
+   margin: 5.4em;
+}
 
 /* ==========================================================================
    Helper classes
