@@ -63,7 +63,7 @@ $(document).ready(function() {
                            $('iframe').remove();
                            $('.audio-player').append(dataPowerful.html); 
                            $('.music-section').css( "background-color", "#66668B");
-                           $('.music-section').css( "border-bottom", "5px solid #383231");
+                           
                         });
                     });
                 
@@ -74,7 +74,7 @@ $(document).ready(function() {
                            $('iframe').remove();
                            $('.audio-player').append(dataPeaceful.html); 
                            $('.music-section').css( "background-color", "#DDD5A4");
-                           $('.music-section').css( "border-bottom", "5px solid #569387")
+                        
                         });
                     });
                 
