@@ -111,6 +111,7 @@ h2 {
     font-size: 2ex;
     font-weight: normal;
     letter-spacing: 5pt;
+    line-height: 3ex;
     text-transform: uppercase;
     color: #fff;
     display: block;
@@ -118,31 +119,26 @@ h2 {
     margin: 0;
 }
 
-h3 {
-    
-}
-
-.closed {
-    display: none;
+a:-webkit-any-link{
+text-decoration:none !important;
 }
 
 a:hover {
+    color: none;
     text-decoration: none;
 }
 
 #main-container {
-    width: 70%;
+    width: 80%;
     min-width: 40%;
     margin: 0 auto;
 }
 
 .button-section {
-/*
     width: 30%;
     float: left;
     box-sizing: border-box;
-*/
-}
+    }
 
 .feelings {
     margin-top: 0;
@@ -154,117 +150,111 @@ a:hover {
 }
 
 .mad {
-    border-bottom: 5px solid #383231;
+    border-bottom: 5px solid #383231 ;
     background: linear-gradient(
-     #4e4847, #4e4847 50%, #383231 50%, #383231
-    );
+    #4e4847 , #4e4847  50%, #383231  50%, #383231     );
     background-size: 100% 202%;
     transition: all 0.2s ease;
 }
 
 .mad:hover {
-  background-position: 100% 100%;
+    background-position: 100% 100%;
 }
 
 .scared {
-    border-bottom: 5px solid #caccd4;
+    border-bottom: 5px solid #caccd4 ;
     background: linear-gradient(
-     #E2E5EE, #E2E5EE 50%, #caccd4 50%, #caccd4
-    );
+    #E2E5EE , #E2E5EE  50%, #caccd4  50%, #caccd4     );
     background-size: 100% 202%;
     transition: all 0.2s ease;
 }
 
 .scared:hover {
-  background-position: 100% 100%;
+    background-position: 100% 100%;
 }
 
 .joyful {
-    border-bottom: 5px solid #569387;
+    border-bottom: 5px solid #569387 ;
     background: linear-gradient(
-     #61A598, #61A598 50%, #569387 50%, #569387
-    );
+    #61A598 , #61A598  50%, #569387  50%, #569387     );
     background-size: 100% 202%;
     transition: all 0.2s ease;
 }
 
 .joyful:hover {
-  background-position: 100% 100%;
+    background-position: 100% 100%;
 }
 
 .powerful {
-    border-bottom: 5px solid #5b5b7c;
+    border-bottom: 5px solid #5b5b7c ;
     background: linear-gradient(
-     #66668B, #66668B 50%, #5b5b7c 50%, #5b5b7c
-    );
+    #66668B , #66668B  50%, #5b5b7c  50%, #5b5b7c     );
     background-size: 100% 202%;
     transition: all 0.2s ease;
 }
 
 .powerful:hover {
-  background-position: 100% 100%;
+    background-position: 100% 100%;
 }
 
 .peaceful {
-    border-bottom: 5px solid #c5be92;
+    border-bottom: 5px solid #c5be92 ;
     background: linear-gradient(
-    #DDD5A4, #DDD5A4 50%, #c5be92 50%, #c5be92
-    );
+    #DDD5A4 , #DDD5A4  50%, #c5be92  50%, #c5be92     );
     background-size: 100% 202%;
     transition: all 0.2s ease;
 }
 
 .peaceful:hover {
-  background-position: 100% 100%;
+    background-position: 100% 100%;
 }
 
 .sad {
-    border-bottom: 5px solid #bab5b7;
+    border-bottom: 5px solid #bab5b7 ;
     background: linear-gradient(
-    #D1CBCD, #D1CBCD 50%, #bab5b7 50%, #bab5b7
-    );
+    #D1CBCD , #D1CBCD  50%, #bab5b7  50%, #bab5b7     );
     background-size: 100% 202%;
     transition: all 0.2s ease;
 }
 
 .sad:hover {
-  background-position: 100% 100%;
+    background-position: 100% 100%;
 }
 
 .music-section {
-/*
     width: 70%;
     float: left;
     box-sizing: border-box;
-*/
     background-color: #777;
-    padding-bottom: 5em;
-/*    border-bottom: 5px solid #555;*/
+    padding-bottom: 3em;
 }
 
 .image-container {
     text-align: center;
+    margin-top: 3em;
 }
 
-.audio-player, .audio-player div, .audio-player h2, .audio-player a, .audio-player span, .audio-player button {
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
+.audio-player, .audio-player div, .audio-player h2, .audio-player a, .audio-player span, .audio-player button iframe {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
 }
- 
+
 div.audio-player {
-    width: 450px;
-    margin: 5em auto 0;
+    width: 570px;
+    margin: 3em auto 0;
     text-align: center;
+    border-top: 1px solid rgba(255,255,255, 0.3);
+    padding-top: 2.5em;
 }
 .audio-player h2 {
-  top: 7px;
-  left: 10px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  color: #ececec;
+    top: 7px;
+    left: 10px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ececec ;
 }
 
 
