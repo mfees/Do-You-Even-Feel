@@ -1,17 +1,26 @@
 SC.initialize({
-  client_id: '48726095adc9106006eafbdb701eb2a6'
+  client_id: '48726095adc9106006eafbdb701eb2a6',
+  redirect_uri: 'http://localhost:8888/callback'
 });
 
 
 $(document).ready(function() {
-                
-                $.getJSON("https://soundcloud.com/oembed?maxheight=180&url=https://soundcloud.com/user699424009/sets/what-a-d-k&format=json", function (dataMad) {
+    
+                 $.getJSON("http://api.soundcloud.com/playlists/82022730.json?client_id=48726095adc9106006eafbdb701eb2a6", function (dataMad) {
                    $('.mad').click(function () {
                            $('iframe').remove();
-                           $('.audio-player').append(dataMad.html); 
+                           $('#audio-player').attr('src', dataMad.permalink_url);
                            $('.music-section').css( "background-color", "#4e4847");       
                         });
                     });
+                
+//                $.getJSON("https://soundcloud.com/oembed?maxheight=180&url=https://soundcloud.com/user699424009/sets/what-a-d-k&format=json", function (dataMad) {
+//                   $('.mad').click(function () {
+//                           $('iframe').remove();
+//                           $('.audio-player').append(dataMad.html); 
+//                           $('.music-section').css( "background-color", "#4e4847");       
+//                        });
+//                    });
    
                $.getJSON("https://soundcloud.com/oembed?maxheight=180&url=https://soundcloud.com/user699424009/sets/trollin&format=json", function (dataJoyful) {
                    $('.joyful').click(function () {
@@ -55,5 +64,13 @@ $(document).ready(function() {
                         });
                     });
                 });
-            
+             
+            var playlist = SC.get('/playlists/82022730', function(playlist) {
+            for (var i = 0; i < playlist.tracks.length; i++) {
+             return playlist.tracks[i].length;
+  }
+}); 
+console.log(playlist);
+
+                $("<iframe width=\"100%\" height=\"180\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F82019062&show_artwork=true&maxheight=180\"></iframe>");
 
